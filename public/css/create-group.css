@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #f5e9e2;
+  font-family: "Fredoka One", cursive;
+  color: #4e4e4e;
+  overflow-x: hidden;
+}
+
+.header {
+  user-select: none;
+  margin: 3rem auto 6rem auto;
+  width: 50%;
+  text-align: center;
+}
+#header-word1 {
+  color: #505050;
+  font-size: 3rem;
+  text-shadow: 0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 0.25);
+  filter: blur(0.125rem);
+  text-indent: -10rem;
+}
+#header-word2 {
+  color: #f50057;
+  font-size: 4.5rem;
+  text-shadow: 0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 0.25);
+}
+#santaClaus {
+  position: absolute;
+  top: -3rem;
+  right: -2rem;
+  width: 9rem;
+  transform: rotate(-45deg);
+  filter: blur(0.0625rem);
+  z-index: -1;
+}
+
+#stocking {
+  position: absolute;
+  bottom: -1rem;
+  left: 0;
+  width: 25%;
+  transform: rotate(-45deg);
+  filter: blur(0.0625rem);
+}
+
+form {
+  width: 80%;
+  margin: auto;
+  font-size: 1.5rem;
+}
+form p {
+  margin-bottom: 0.5rem;
+}
+
+input {
+  font-size: 1rem;
+  font-family: "Fredoka One", cursive;
+  text-align: center;
+
+  padding: 0.75em 1em;
+  margin-bottom: 1.5rem;
+  background-color: #faf3f0;
+  width: 100%;
+  border-radius: 0.75rem;
+  border: 1px solid #c6c6c6;
+  outline: none;
+  box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.25);
+}
+input::placeholder {
+  color: #c4c4c4;
+}
+button {
+  display: block;
+  margin: 1rem auto 0 auto;
+  padding: 0.5em 1em;
+  border-radius: 10rem;
+  font-family: "Fredoka One", cursive;
+  font-size: 1.25rem;
+  color: white;
+  background-color: #f50057;
+  border: none;
+  box-shadow: 0.25rem 0.25rem 0.25rem rgba(0, 0, 0, 0.25);
+}
