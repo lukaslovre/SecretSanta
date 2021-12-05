@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/results.css" />
+    <script src="/js/results.js" defer></script>
+    <title>Secret Santa</title>
+  </head>
+  <body>
+    <div class="instructions">
+      <p class="instructionsTitle">Upute:</p>
+      <p class="instructionsDescription">
+        Stisnite start i dajte mobitel odgovarajucoj osobi!
+      </p>
+    </div>
+
+    <button id="startAnimationButton" onclick="startLoadingAnimation()">
+      Start
+    </button>
+
+    <img src="/svg/loading_snowflake.svg" alt="snowflake" id="snowflake" />
+
+    <div class="resultDiv">
+      <p id="currentPerson">Lukas</p>
+      <p>Ti si secret santa:</p>
+      <p id="resultPerson" onclick="insertRandomSymbols()">*%!?+_</p>
+      <p id="objasnjenje">klikni na simbole da se prikaze</p>
+      <img
+        src="/svg/rightArrow.svg"
+        alt="next"
+        id="nextArrow"
+        onclick="nextPerson()"
+      />
+    </div>
+    <img src="/svg/cat.svg" alt="cat" id="cat" />
+  </body>
+</html>

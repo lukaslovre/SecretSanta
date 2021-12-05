@@ -3,11 +3,16 @@
   padding: 0;
   box-sizing: border-box;
 }
+html {
+  overflow: hidden;
+}
 body {
   background-color: #f5e9e2;
   font-family: "Fredoka One", cursive;
   color: #4e4e4e;
+  position: relative;
   overflow: hidden;
+  height: 100vh; /* dodati ono da ne sjebe tipkovnica height*/
 }
 
 .header {
@@ -71,7 +76,7 @@ a:hover {
   position: absolute;
   bottom: -1rem;
   right: 0;
-  width: 55%;
+  width: 14rem;
   filter: blur(0.0625rem);
   z-index: -1;
 }

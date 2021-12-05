@@ -3,11 +3,16 @@
   padding: 0;
   box-sizing: border-box;
 }
+html {
+  overflow-x: hidden;
+}
 body {
   background-color: #f5e9e2;
   font-family: "Fredoka One", cursive;
   color: #4e4e4e;
+  position: relative;
   overflow-x: hidden;
+  height: 100vh;
 }
 
 .header {
@@ -39,20 +44,20 @@ body {
 }
 
 #stocking {
-  position: absolute;
+  position: relative;
   bottom: -1rem;
-  left: 0;
-  width: 25%;
+  left: 1rem;
+  width: 5rem;
   transform: rotate(-45deg);
   filter: blur(0.0625rem);
 }
 
-form {
+.inputDiv {
   width: 80%;
   margin: auto;
   font-size: 1.5rem;
 }
-form p {
+.inputDiv p {
   margin-bottom: 0.5rem;
 }
 

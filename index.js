@@ -19,12 +19,8 @@ app.post("/create-group", (req, res) => {
   res.redirect("/");
 });
 
-app.get("/groupID", (req, res) => {
-  res.render("setPassword");
-});
-app.post("/test", (req, res) => {
-  console.log(req.body);
-  res.redirect("/groupID");
+app.get("/results", (req, res) => {
+  res.render("results");
 });
 
 app.listen(port, () => {

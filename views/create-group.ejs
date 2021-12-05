@@ -11,6 +11,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="/css/create-group.css" />
+    <script src="/js/create-group.js" defer></script>
     <title>Secret Santa</title>
   </head>
   <body>
@@ -24,41 +25,40 @@
       <p id="header-word1">secret</p>
       <p id="header-word2">santa</p>
     </div>
-    <div class="inputDiv">
-      <form action="/create-group" method="POST">
-        <p>Your name:</p>
-        <input
-          type="text"
-          name="members"
-          placeholder="Enter member 1"
-          maxlength="16"
-          required
-        />
-        <p>Other members:</p>
-        <input
-          type="text"
-          name="members"
-          placeholder="Enter member 2"
-          maxlength="16"
-          required
-        />
-        <input
-          type="text"
-          name="members"
-          placeholder="Enter member 3"
-          maxlength="16"
-          required
-        />
-        <input
-          type="text"
-          name="members"
-          placeholder="Enter member 4"
-          maxlength="16"
-          required
-        />
 
-        <button type="submit">Next step</button>
-      </form>
+    <div class="inputDiv">
+      <p>Your name:</p>
+      <input
+        type="text"
+        name="members"
+        placeholder="Enter member 1"
+        maxlength="16"
+        required
+      />
+      <p>Other members:</p>
+      <input
+        type="text"
+        name="members"
+        placeholder="Enter member 2"
+        maxlength="16"
+        required
+      />
+      <input
+        type="text"
+        name="members"
+        placeholder="Enter member 3"
+        maxlength="16"
+        required
+      />
+      <input
+        type="text"
+        name="members"
+        placeholder="Enter member 4"
+        maxlength="16"
+        required
+      />
+
+      <button id="submitMembers" onclick="submitNames()">Show results</button>
     </div>
     <img src="/svg/stocking.svg" alt="stocking" id="stocking" />
   </body>
