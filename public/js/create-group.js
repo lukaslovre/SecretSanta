@@ -38,10 +38,9 @@ function submitNames() {
     names.push(input.value);
   });
   let filtered = names.filter((name) => name != "");
-  console.log(filtered);
   if (filtered.length >= 4) {
     //posalji ih dalje
-    localStorage.setItem("members", names);
+    localStorage.setItem("members", filtered);
     window.location.href = "/results";
   } else {
     alert("Šta glumite? mora vas bit minimalno četvero!");
